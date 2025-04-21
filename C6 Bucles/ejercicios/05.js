@@ -1,7 +1,10 @@
-function esVerdadero(valor) {
   // Si "valor" es verdadero, retorna "Soy verdadero".
   // Caso contrario, retorna "Soy falso".
   // Tu código:
-}
 
-module.exports = esVerdadero;
+  function esVerdadero(valor) {
+    return valor ? "Soy verdadero" : "Soy falso";
+  }
+  
+  module.exports = esVerdadero;
+  

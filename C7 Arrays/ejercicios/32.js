@@ -1,10 +1,17 @@
-function esPalindromo(string) {
   // La función recibe un argumento "string".
   // Verifica si este string es palíndromo o no.
   // Retorna true si lo es, caso contrario, retorna false.
   // IMPORTANTE: Un palíndromo es una palabra o frase
   // que se lee igual hacia adelante que hacia atrás.
   // Tu código:
-}
 
-module.exports = esPalindromo;
+  function esPalindromo(string) {
+    // Eliminamos los espacios y convertimos el string a minúsculas
+    const cleanString = string.replace(/\s+/g, '').toLowerCase();
+  
+    // Comparamos el string con su reverso
+    return cleanString === cleanString.split('').reverse().join('');
+  }
+  
+  module.exports = esPalindromo;
+  

@@ -1,4 +1,3 @@
-function esVocal(letra) {
   // La función recibe un argumento llamado letra el cual es un string.
   // Retorna como resultado un string que indica si el argumento letra es una vocal.
   // de lo contrario retorna el string "Dato incorrecto"
@@ -8,6 +7,19 @@ function esVocal(letra) {
   // "n" ---> "Dato incorrecto"
   // "texto largo" ---> "Dato incorrecto"
   // Tu código:
-}
 
-module.exports = esVocal;
+  function esVocal(letra) {
+    if (letra.length !== 1) {
+      return "Dato incorrecto";
+    }
+  
+    const vocales = ['a', 'e', 'i', 'o', 'u'];
+    if (vocales.includes(letra.toLowerCase())) {
+      return "Es vocal";
+    } else {
+      return "Dato incorrecto";
+    }
+  }
+  
+  module.exports = esVocal;
+  
